@@ -1,0 +1,364 @@
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ git --version
+git version 2.55.0.windows.5
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ pwd #Print Working Directory
+/c/Users/Praju/Desktop
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ ls #List of all files and folders
+desktop.ini
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ pwd
+/c/Users/Praju/Desktop
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ cd .. #Back
+
+Praju@Praju-PC MINGW64 ~
+$ pwd
+/c/Users/Praju
+
+Praju@Praju-PC MINGW64 ~
+$ ls
+ AppData/
+'Application Data'@
+ Contacts/
+ Cookies@
+ Desktop/
+ Documents/
+ Favorites/
+ Links/
+'Local Settings'@
+ Music/
+'My Documents'@
+ NTUSER.DAT
+ NTUSER.DAT{a8e3b587-8024-11f1-b7ba-fa9aa9982a14}.TM.blf
+ NTUSER.DAT{a8e3b587-8024-11f1-b7ba-fa9aa9982a14}.TMContainer00000000000000000001.regtrans-ms
+ NTUSER.DAT{a8e3b587-8024-11f1-b7ba-fa9aa9982a14}.TMContainer00000000000000000002.regtrans-ms
+ NetHood@
+ OneDrive/
+ Pictures/
+ PrintHood@
+ Python-Code-with-Harry/
+ Recent@
+'Saved Games'/
+ Searches/
+ SendTo@
+'Start Menu'@
+ Templates@
+ Videos/
+ Work/
+ ntuser.dat.LOG1
+ ntuser.dat.LOG2
+ ntuser.ini
+
+Praju@Praju-PC MINGW64 ~
+$ cd Desktop
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ mkdir aug17 #Make Directory
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ ld
+bash: ld: command not found
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ ls
+aug17/  desktop.ini
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ touch d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ cd aug17
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ touch d1.txt
+
+
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ nano d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ cat d1.txt
+This is Version 1
+Feature 1
+My Name is Prajwal Purohit.
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ git config --global user.name "prajwal-purohit"
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ git config --global user.email "prajwal.purohit@yahoo.com"
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ git init
+Initialized empty Git repository in C:/Users/Praju/Desktop/aug17/.git/
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        d1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+warning: in the working copy of 'd1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   d1.txt
+
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version 1 from Master Branch"
+[master (root-commit) 4ffae08] Version 1 from Master Branch
+ 1 file changed, 3 insertions(+)
+ create mode 100644 d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit 4ffae08aab4399ceed248e0a49b69cff0a4c95d5 (HEAD -> master)
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:03:37 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ nano d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version 2 New Lines Added"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   d1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit 4ffae08aab4399ceed248e0a49b69cff0a4c95d5 (HEAD -> master)
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:03:37 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ cat d1.txt
+This is Version 1
+Feature 1
+My Name is Prajwal Purohit.
+
+This is Version 2
+Ronaldo.
+Suiii.
+Virat Kohli.
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   d1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+warning: in the working copy of 'd1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        modified:   d1.txt
+
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version 2 New Lines Added"
+[master 1d6c897] Version 2 New Lines Added
+ 1 file changed, 5 insertions(+)
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+nothing to commit, working tree clean
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit 1d6c8975f56666f26160a07efb23d759b8ae82be (HEAD -> master)
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:12:24 2026 +0530
+
+    Version 2 New Lines Added
+
+commit 4ffae08aab4399ceed248e0a49b69cff0a4c95d5
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:03:37 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ ^C
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git checkout 4ffae08aab4399ceed248e0a49b69cff0a4c95d5
+Note: switching to '4ffae08aab4399ceed248e0a49b69cff0a4c95d5'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 4ffae08 Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 ((4ffae08...))
+$ cat d1.txt
+This is Version 1
+Feature 1
+My Name is Prajwal Purohit.
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 ((4ffae08...))
+$ git checkout master
+Previous HEAD position was 4ffae08 Version 1 from Master Branch
+Switched to branch 'master'
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ nano d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ cat d1.txt
+This is Version 1
+Feature 1
+My Name is Prajwal Purohit.
+
+This is Version 2
+Ronaldo.
+Suiii.
+Virat Kohli.
+
+This is Version 3
+Praju WWE Star
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   d1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit 1d6c8975f56666f26160a07efb23d759b8ae82be (HEAD -> master)
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:12:24 2026 +0530
+
+    Version 2 New Lines Added
+
+commit 4ffae08aab4399ceed248e0a49b69cff0a4c95d5
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:03:37 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version from Master Branch"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   d1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version from Master Branch"
+[master dc9e0ec] Version from Master Branch
+ 1 file changed, 3 insertions(+)
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit dc9e0ec72fd2b06aa55f169feb27dfc787080cd3 (HEAD -> master)
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:22:26 2026 +0530
+
+    Version from Master Branch
+
+commit 1d6c8975f56666f26160a07efb23d759b8ae82be
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:12:24 2026 +0530
+
+    Version 2 New Lines Added
+
+commit 4ffae08aab4399ceed248e0a49b69cff0a4c95d5
+Author: prajwal-purohit <prajwal.purohit@yahoo.com>
+Date:   Wed Sep 16 11:03:37 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git checkout 1d6c8975f56666f26160a07efb23d759b8ae82be
+Note: switching to '1d6c8975f56666f26160a07efb23d759b8ae82be'.
+
+You are in 'detached HEAD' state. You can look around, make experimental
+changes and commit them, and you can discard any commits you make in this
+state without impacting any branches by switching back to a branch.
+
+If you want to create a new branch to retain commits you create, you may
+do so (now or later) by using -c with the switch command. Example:
+
+  git switch -c <new-branch-name>
+
+Or undo this operation with:
+
+  git switch -
+
+Turn off this advice by setting config variable advice.detachedHead to false
+
+HEAD is now at 1d6c897 Version 2 New Lines Added
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 ((1d6c897...))
+$ nano d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 ((1d6c897...))
+$

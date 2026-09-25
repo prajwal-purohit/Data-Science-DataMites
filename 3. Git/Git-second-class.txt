@@ -1,0 +1,497 @@
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ git --version
+git version 2.55.0.windows.5
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ pwd
+/c/Users/Praju/Desktop
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ ls
+desktop.ini
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ mkdir aug17
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ ld
+bash: ld: command not found
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ ls
+aug17/  desktop.ini
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ touch d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop
+$ cd aug17
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ nano d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ cat d1.txt
+This is Version 1
+Feature 1
+My name is Prajwal Purohit
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ git config --global user.name "Prajwal"
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ git config --global user.email "prajwal.purohit@hotmail.com"
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17
+$ git init
+Initialized empty Git repository in C:/Users/Praju/Desktop/aug17/.git/
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be co
+mmitted)
+        d1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+warning: in the working copy of 'd1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   d1.txt
+
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git cpmmit -m "Version 1 from Master Branch"
+git: 'cpmmit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+fatal: your current branch 'master' does not have any co
+mmits yet
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+fatal: your current branch 'master' does not have any commits yet
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version 1 from Master Branch"
+[master (root-commit) a9b716b] Version 1 from Master Branch
+ 1 file changed, 3 insertions(+)
+ create mode 100644 d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit a9b716b16288048cdaefdc2d623b6cce17dcd18f (HEAD ->
+ master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 09:54:23 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ nano d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version 2 from Master Branch"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   d1.txt
+
+no changes added to commit (use "git add" and/or "git co
+mmit -a")
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ cat d1.txt
+This is Version 1
+Feature 1
+My name is Prajwal Purohit
+
+This is Version 2
+Feature 2
+My favourite Cricket Player is Virat Kohli
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git status
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   d1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit a9b716b16288048cdaefdc2d623b6cce17dcd18f (HEAD -> master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 09:54:23 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+warning: in the working copy of 'd1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit a9b716b16288048cdaefdc2d623b6cce17dcd18f (HEAD -> master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 09:54:23 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ ^[[200~git remote add origin https://github.com/prajwal-purohit/Aug17.git~
+bash: $'\E[200~git': command not found
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git remote add origin https://github.com/prajwal-purohit/Aug17.git
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git config --global user.name "Prajwal"
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git config --global user.email "prajwal.purohit@hotmail.com"
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git push origin master
+info: please complete authentication in your browser...
+
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git push origin master
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 277 bytes | 277.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/prajwal-purohit/Aug17.git
+ * [new branch]      master -> master
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ nano d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ cat d1.txt
+This is Version 1
+Feature 1
+My name is Prajwal Purohit
+
+This is Version 2
+Feature 2
+My favourite Cricket Player is Virat Kohli
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version 2 from Master Branch"
+[master bad3197] Version 2 from Master Branch
+ 1 file changed, 4 insertions(+)
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit bad3197827227e9bdf7e795c5b42f00f68dbfedd (HEAD -> master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:06:34 2026 +0530
+
+    Version 2 from Master Branch
+
+commit a9b716b16288048cdaefdc2d623b6cce17dcd18f (origin/master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 09:54:23 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ nano d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version 3 from Master Branch"
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+        modified:   d1.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+warning: in the working copy of 'd1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit bad3197827227e9bdf7e795c5b42f00f68dbfedd (HEAD -> master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:06:34 2026 +0530
+
+    Version 2 from Master Branch
+
+commit a9b716b16288048cdaefdc2d623b6cce17dcd18f (origin/master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 09:54:23 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git commit -m "Version 3 from Master Branch"
+[master 54ae103] Version 3 from Master Branch
+ 1 file changed, 5 insertions(+)
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git add d1.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit 54ae103f42d0e1c3f5e2cb55be3e3a175e25a20c (HEAD -> master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:08:55 2026 +0530
+
+    Version 3 from Master Branch
+
+commit bad3197827227e9bdf7e795c5b42f00f68dbfedd
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:06:34 2026 +0530
+
+    Version 2 from Master Branch
+
+commit a9b716b16288048cdaefdc2d623b6cce17dcd18f (origin/master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 09:54:23 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git push origin master
+Enumerating objects: 8, done.
+Counting objects: 100% (8/8), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (6/6), 614 bytes | 307.00 KiB/s, done.
+Total 6 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (1/1), done.
+To https://github.com/prajwal-purohit/Aug17.git
+   a9b716b..54ae103  master -> master
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git branch
+* master
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git branch hyd
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git branch
+  hyd
+* master
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git branch bbsr
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git branch
+  bbsr
+  hyd
+* master
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git branch -d bbsr
+Deleted branch bbsr (was 54ae103).
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git branch
+  hyd
+* master
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git checkout hyd
+Switched to branch 'hyd'
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git branch
+* hyd
+  master
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ touch d2.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ nano d2.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ cat d2.txt
+Version 1
+My GOATs:
+1. Virat Kohli
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git status
+On branch hyd
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        d2.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git add d2.txt
+warning: in the working copy of 'd2.txt', LF will be replaced by CRLF the next time Git touches it
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git status
+On branch hyd
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        new file:   d2.txt
+
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git commit -m "Version 1 from hyd Branch"
+[hyd ea3c40c] Version 1 from hyd Branch
+ 1 file changed, 3 insertions(+)
+ create mode 100644 d2.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git log
+commit ea3c40c2a690474b9a1c4006c958b8b7ff73f8f0 (HEAD -> hyd)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:32:07 2026 +0530
+
+    Version 1 from hyd Branch
+
+commit 54ae103f42d0e1c3f5e2cb55be3e3a175e25a20c (origin/master, master)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:08:55 2026 +0530
+
+    Version 3 from Master Branch
+
+commit bad3197827227e9bdf7e795c5b42f00f68dbfedd
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:06:34 2026 +0530
+
+    Version 2 from Master Branch
+
+commit a9b716b16288048cdaefdc2d623b6cce17dcd18f
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 09:54:23 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git push origin hyd
+fatal: unable to access 'https://github.com/prajwal-purohit/Aug17.git/': Recv failure: Connection was reset
+
+
+
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git push origin hyd
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 318 bytes | 318.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'hyd' on GitHub by visiting:
+remote:      https://github.com/prajwal-purohit/Aug17/pull/new/hyd
+remote:
+To https://github.com/prajwal-purohit/Aug17.git
+ * [new branch]      hyd -> hyd
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (hyd)
+$ git checkout master
+Switched to branch 'master'
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git merge hyd
+Updating 54ae103..ea3c40c
+Fast-forward
+ d2.txt | 3 +++
+ 1 file changed, 3 insertions(+)
+ create mode 100644 d2.txt
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git pull origin master
+From https://github.com/prajwal-purohit/Aug17
+ * branch            master     -> FETCH_HEAD
+Already up to date.
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git push origin master
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/prajwal-purohit/Aug17.git
+   54ae103..ea3c40c  master -> master
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git log
+commit ea3c40c2a690474b9a1c4006c958b8b7ff73f8f0 (HEAD -> master, origin/master, origin/hyd, hyd)
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:32:07 2026 +0530
+
+    Version 1 from hyd Branch
+
+commit 54ae103f42d0e1c3f5e2cb55be3e3a175e25a20c
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:08:55 2026 +0530
+
+    Version 3 from Master Branch
+
+commit bad3197827227e9bdf7e795c5b42f00f68dbfedd
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 10:06:34 2026 +0530
+
+    Version 2 from Master Branch
+
+commit a9b716b16288048cdaefdc2d623b6cce17dcd18f
+Author: Prajwal <prajwal.purohit@hotmail.com>
+Date:   Thu Sep 17 09:54:23 2026 +0530
+
+    Version 1 from Master Branch
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git tag
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git tag v3.0 54ae103f42d0e1c3f5e2cb55be3e3a175e25a20c
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git tag
+v3.0
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$ git push origin v3.0
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/prajwal-purohit/Aug17.git
+ * [new tag]         v3.0 -> v3.0
+
+Praju@Praju-PC MINGW64 ~/Desktop/aug17 (master)
+$
