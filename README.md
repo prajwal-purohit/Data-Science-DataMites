@@ -1,4 +1,4 @@
-# 📊 Data Science Learning Repository
+# 📊 Certified Data Science (CDS)  |  DataMites  
 
 A comprehensive collection of **Data Science, Machine Learning, Python, Statistics, SQL, Big Data, and Business Intelligence** learning materials, practice programs, notebooks, and projects.
 
