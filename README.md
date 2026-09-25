@@ -270,8 +270,8 @@ Projects may include:
 
 ## 📈 Progress
 
-* [ ] Python Fundamentals
-* [ ] Statistics Fundamentals
+* [x] Python Fundamentals
+* [x] Statistics Fundamentals
 * [ ] Data Science Fundamentals
 * [ ] Machine Learning Fundamentals
 * [ ] Advanced Machine Learning
